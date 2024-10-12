@@ -1,0 +1,263 @@
+/* Estilo del calendario */
+.calendar-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.calendar {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* Eliminar la subrayado de los enlaces del calendario */
+.calendar a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del padre */
+}
+
+/* Cambiar color al hacer hover sobre los enlaces del calendario */
+.calendar a:hover {
+    color: #3498db; /* Cambia el color del texto al hacer hover */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header span {
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 14.28%;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #34495e;
+    color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ecf0f1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #bdc3c7;
+}
+
+td {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+td:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+
+/* Modal estilo y botones */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #2c3e50;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.medicion-box {
+    background-color: #1abc9c;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+/* Ajustar el color de fondo al mismo que el gráfico mostrado */
+#consulta3Modal .modal-content {
+    background-color: #2c3e50; /* Azul oscuro similar al que aparece en la imagen */
+    color: white; /* Color del texto */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 400px; /* Limitar el tamaño máximo del modal */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5); /* Sombra para dar efecto */
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #consulta3Modal .modal-content {
+        width: 80%; /* Ajuste responsive */
+    }
+}
+
+/* Estilo del texto dentro del modal */
+#consulta3Modal p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+#consultaContainer {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #3498db;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+input[type="date"] {
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Estilo general para el contenedor */
+.container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    margin: 20px auto; /* Centrar el contenedor */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para los encabezados */
+.container h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+.container label {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 10px;
+    color: #555;
+}
+
+/* Estilo para los inputs de fecha */
+.container input[type="date"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el botón */
+.container .btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.container .btn:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
